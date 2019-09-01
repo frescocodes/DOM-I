@@ -78,3 +78,4 @@ h4text[4].textContent = siteContent['main-content']['vision-content']
 let middleImg = document.querySelector('#middle-img');
 console.log(middleImg);
 middleImg.src = siteContent['main-content']['middle-img-src'];
+// 
