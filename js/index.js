@@ -76,6 +76,14 @@ h4text[4].textContent = siteContent['main-content']['vision-content']
 
 
 let middleImg = document.querySelector('#middle-img');
-console.log(middleImg);
 middleImg.src = siteContent['main-content']['middle-img-src'];
-// 
+
+let contactHead = document.querySelector('.contact h4');
+contactHead.textContent = siteContent['contact']['contact-h4']
+let contactContent = document.querySelectorAll('.contact p');
+contactContent[0].textContent = siteContent['contact']['address'];
+contactContent[1].textContent = siteContent['contact']['phone'];
+contactContent[2].textContent = siteContent['contact']['email'];
+
+let footerP = document.querySelector('footer p');
+footerP.textContent = siteContent['footer']['copyright'];
