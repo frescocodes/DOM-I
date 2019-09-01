@@ -105,7 +105,6 @@ newNav1.textContent = 'Nav1'
 newNav2.textContent = 'Nav2'
 
 let navbar = document.querySelector('nav');
-console.log(navbar);
 
 navbar.prepend(newNav1);
 navbar.appendChild(newNav2);
@@ -115,3 +114,10 @@ changeColor();
 
 // STRETCH GOALS
 
+h4[0].style.color = 'red';
+h4[1].style.color = 'orange';
+h4[2].style.color = 'green';
+h4[3].style.color = 'blue';
+h4[4].style.color = 'purple';
+
+contactContent[0].textContent = "123 Way 456 Street Somewhere, USA";
