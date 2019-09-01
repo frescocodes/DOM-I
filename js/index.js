@@ -42,14 +42,15 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 
-// Nav Links
-let navLinks = document.querySelectorAll('nav a')
+// Populate Site Content
+let navLinks = document.querySelectorAll('nav a');
 navLinks[0].textContent = siteContent.nav["nav-item-1"];
 navLinks[1].textContent = siteContent.nav["nav-item-2"];
 navLinks[2].textContent = siteContent.nav["nav-item-3"];
 navLinks[3].textContent = siteContent.nav["nav-item-4"];
 navLinks[4].textContent = siteContent.nav["nav-item-5"];
 navLinks[5].textContent = siteContent.nav["nav-item-6"];
+
 
 let ctaImg = document.querySelector('#cta-img')
 ctaImg.src = siteContent["cta"]["img-src"];
@@ -87,3 +88,30 @@ contactContent[2].textContent = siteContent['contact']['email'];
 
 let footerP = document.querySelector('footer p');
 footerP.textContent = siteContent['footer']['copyright'];
+
+
+
+// Add New Content
+function changeColor() {
+  let navs = document.querySelectorAll('nav a');
+  for (i = 0; i < navs.length; i++){
+    navs[i].style.color = 'green';
+  }
+}
+
+const newNav1 = document.createElement('a');
+const newNav2 = document.createElement('a')
+newNav1.textContent = 'Nav1'
+newNav2.textContent = 'Nav2'
+
+let navbar = document.querySelector('nav');
+console.log(navbar);
+
+navbar.prepend(newNav1);
+navbar.appendChild(newNav2);
+
+changeColor();
+
+
+// STRETCH GOALS
+
